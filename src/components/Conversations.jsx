@@ -12,7 +12,7 @@ const Conversations = () => {
                         md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 
                         sm:grid sm:grid-rows-2 sm:grid-flow-col sm:gap-4
                         flex flex-col gap-4">
-                
+
                 <div class="md:row-span-1 md:col-span-2 md:h-[240px]
                             sm:row-span-1 sm:col-span-1 sm:h-[310px] ">
                     <h2 className="md:text-2xl sm:text-xl
@@ -35,7 +35,7 @@ const Conversations = () => {
                 </div>
                 <div class="md:row-span-2 md:col-span-1 md:mt-0
                             sm:row-span-1 sm:col-span-1 sm:mt-[-100px]">
-                    <img className="md:max-w-[293px] mx-auto px-4" src={conver3} alt="/" />
+                    <img className="md:max-w-[302px] mx-auto px-4" src={conver3} alt="/" />
                 </div>
             </div>
 

@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Conversations } from './components/Conversations';
 import { Facts } from './components/Facts';
+import { SecondHero } from './components/SecondHero/index';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Conversations />
       <Facts />
+      <SecondHero />
     </div>
   );
 }

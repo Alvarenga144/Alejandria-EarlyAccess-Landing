@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { AccesoAntibutton } from "./AccesoAntiButton";
-import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import MainLogo from '../assets/images/mainlogo.png';
 
 const Navbar = () => {
-    const [nav, setNav] =  useState(true);
+    const [nav, setNav] = useState(true);
     const handleNav = () => {
         setNav(!nav);
     }
@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="drop-shadow-lg bg-[#FFFFFF]">
             <div class="flex justify-between items-center h-12 max-w-[1240px] mx-auto px-4">
                 <div className="flex justify-between items-center">
-                    <img className="w-[34px] h-[22px] mr-1" src={MainLogo} alt="/"/>
+                    <img className="w-[34px] h-[22px] mr-1" src={MainLogo} alt="/" />
                     <h1 className="text-lg font-bold tracking-wide text-[#000000]">Alejandría</h1>
                 </div>
                 <ul className="hidden md:flex font-semibold">
@@ -22,8 +22,8 @@ const Navbar = () => {
                     <li className="p-4 ">Section</li>
                 </ul>
                 <div className="hidden md:flex">
-                        <AccesoAntibutton />
-                    </div>
+                    <AccesoAntibutton />
+                </div>
 
                 <div onClick={handleNav} className='block md:hidden'>
                     {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}

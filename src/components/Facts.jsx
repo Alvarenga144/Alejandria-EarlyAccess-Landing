@@ -5,7 +5,7 @@ import DevicesSVG from '../assets/images/multiple-devices-svgrepo-com.svg';
 import LibrarySVG from '../assets/images/library-svgrepo-com.svg';
 
 const Facts = () => {
-    return(
+    return (
         <div className="w-full text-[#000000] justify-center py-20">
             <div className="max-w-[1100px] w-full mx-auto text-center flex flex-col">
 
@@ -19,7 +19,7 @@ const Facts = () => {
                 <div className="md:grid md:grid-cols-4 md:gap-4 md:my-14 md:mx-4
                                 sm:grid sm:grid-cols-2 sm:gap-4 sm:my-12
                                 grid grid-cols12 gap-4 m-auto my-10">
-                    
+
                     <div className="border border-[#ADADAD] rounded-lg max-w-[260px] min-h-[160px] px-3 pt-8 pb-6">
                         <img className="max-w-[40px] mx-auto" src={GlobeSVG} alt="/" />
                         <h2 className="md:text-xl sm:text-md text-md mt-2 text-[#000000] font-bold tracking-wide">+20 Países</h2>

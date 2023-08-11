@@ -3,7 +3,7 @@ import Partphone from '../assets/images/partphone.png';
 import { AccesoAntibutton } from "./AccesoAntiButton";
 
 const Hero = () => {
-    return(
+    return (
         <div className="w-full text-[#000000] justify-center pb-20">
             <div className="max-w-[900px]  md:mt-[120px]  sm:mt-[100px] mt-[80px] w-full mx-auto text-center flex flex-col">
                 <div className="flex text-center justify-center z-[-10]">
@@ -11,8 +11,8 @@ const Hero = () => {
                 </div>
                 <h3 className="md:text-4xl sm:text-3xl text-xl font-black drop-shadow-2xl z-[-10]">La nueva frontera del internet</h3>
                 <p className="md:text-xl sm:text-md text-md text-[#616161] px-2 mt-8 drop-shadow-2xl z-[-10]">
-                    Embárcate en un viaje hacia la nueva revolución de la humanidad. Una plataforma donde la red social se fusiona con la 
-                    <b className="text-[#7B3DFF] ml-1">inteligencia artificial</b>, 
+                    Embárcate en un viaje hacia la nueva revolución de la humanidad. Una plataforma donde la red social se fusiona con la
+                    <b className="text-[#7B3DFF] ml-1">inteligencia artificial</b>,
                     cambiando la forma en que interactuamos, aprendemos y creamos en el ciberespacio.
                 </p>
             </div>
