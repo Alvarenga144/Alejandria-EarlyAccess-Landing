@@ -27,15 +27,15 @@ const Conversations = () => {
                 </div>
                 <div class="md:row-span-1 md:col-span-1 md:mt-[-36px]
                             sm:row-span-1 sm:col-span-1 sm:mt-[-100px]">
-                    <img className="md:max-w-[291px] md:ml-0 mx-auto" src={conver1} alt="/" />
+                    <img className="md:max-w-[291px] md:ml-0 mx-auto px-4" src={conver1} alt="/" />
                 </div>
                 <div class="md:row-span-1 md:col-span-1 md:mt-[-36px]
                             sm:row-span-1 sm:col-span-1 sm:h-[310px]">
-                    <img className="md:max-w-[268px] md:ml-0 mx-auto" src={conver2} alt="/" />
+                    <img className="md:max-w-[268px] md:ml-0 mx-auto px-4" src={conver2} alt="/" />
                 </div>
                 <div class="md:row-span-2 md:col-span-1 md:mt-0
                             sm:row-span-1 sm:col-span-1 sm:mt-[-100px]">
-                    <img className="md:max-w-[293px] mx-auto" src={conver3} alt="/" />
+                    <img className="md:max-w-[293px] mx-auto px-4" src={conver3} alt="/" />
                 </div>
             </div>
 

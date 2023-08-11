@@ -1,7 +1,8 @@
 import React from "react";
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero'
-import { Conversations } from './components/Conversations'
+import { Hero } from './components/Hero';
+import { Conversations } from './components/Conversations';
+import { Facts } from './components/Facts';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Conversations />
+      <Facts />
     </div>
   );
 }
