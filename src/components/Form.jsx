@@ -1,4 +1,4 @@
-import axios from "axios";
+//import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import MainLogo from '../assets/images/mainlogo.png';
@@ -10,12 +10,13 @@ const Form = () => {
     const [email, setEmail] = useState('');
     const [profile, setProfile] = useState('');
     const [coment, setComent] = useState('');
+    const dateRegistered = new Date().toLocaleString()
 
     // input function 
     const nameFun = (event) => {
         setName(event.target.value);
     }
-    
+
     const emailFun = (event) => {
         setEmail(event.target.value);
     }
@@ -28,29 +29,21 @@ const Form = () => {
         setComent(event.target.value);
     }
 
+
     // On submit event
     const handleSubmit = (event) => {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzo6dRcd9mSzu-vTiW0_rlxJn_KijtMv3hk6SebqjQ2nQA5hlDeQzByOMt9BILBpmI5/exec';
+        const form = document.forms['my-google-sheet'];
         event.preventDefault();
-        //console.log(name, email, profile, coment);
 
-        const dataForm = {
-            Name: name, 
-            Email: email,
-            Profile: profile,
-            Coments: coment,
-        }
-        
-        try {
-            axios.post('https://sheet.best/api/sheets/b82e98a0-53cc-4cc8-a7db-665a2f901017', dataForm).then((response) => {
-                console.log(response);
-                setName('');
-                setEmail('');
-                setProfile('');
-                setComent('');
-            })
-        } catch (error) {
-            console.log(error)
-        }
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+
+        setName('');
+        setEmail('');
+        setProfile('selection');
+        setComent('');
     }
 
     return (
@@ -69,24 +62,25 @@ const Form = () => {
                             sm:row-span-1 sm:col-span-1 sm:max-w-[300px] sm:px-2
                             min-h-[400px] min-w-[280px] max-w-[340px] mx-auto">
 
-                    <form onSubmit={handleSubmit} autoComplete="off" className="w-full h-full mx-auto text-center justify-center bg-[#FFFFFF] rounded-2xl px-6 py-10 ">
+                    <form onSubmit={handleSubmit} method="POST" name="my-google-sheet" id="my-google-sheet" autoComplete="off" className="w-full h-full mx-auto text-center justify-center bg-[#FFFFFF] rounded-2xl px-6 py-10 ">
                         <img className="w-[44px] h-[32px] mx-auto mb-8" src={MainLogo} alt="/" />
 
-                        <input onChange={nameFun} value={name} type="text" name="txtName" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold" placeholder="Nombre" required />
-                        
-                        <input onChange={emailFun} value={email} type="email" name="txtEmail" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold mt-3" placeholder="Correo electrónico" required />
+                        <input onChange={nameFun} value={name} type="text" name="Name" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold" placeholder="Nombre" required />
 
-                        <select onChange={profileFun} value={profile} name="selOptions" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold mt-3">
+                        <input onChange={emailFun} value={email} type="email" name="Email" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold mt-3" placeholder="Correo electrónico" required />
+
+                        <select onChange={profileFun} value={profile} name="Profile" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold mt-3">
+                            <option value="selection">Elige tu perfil</option>
                             <option value="Usuario">Usuario</option>
                             <option value="Institucion">Institucion</option>
                             <option value="Inversor">Inversor</option>
                             <option value="Empresa">Empresa</option>
                             <option value="Emprendedor">Emprendedor</option>
-                            <option value="CreaContenido">Creador de contenido</option>
+                            <option value="Crea de Contenido">Creador de contenido</option>
                         </select>
 
-                        <textarea onChange={comentFun} value={coment} name="coments" id="txtComents" cols="30" rows="3" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold mt-3" placeholder="Comentarios adicionales..."></textarea>
-                        
+                        <textarea onChange={comentFun} value={coment} name="Coment" id="txtComents" cols="30" rows="3" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold mt-3" placeholder="Comentarios adicionales..."></textarea>
+                        <input name="dateRegistered" value={dateRegistered} className="hidden" readOnly />
                         <input type="submit" className="w-full min-h-[37px] py-2 px-3 mt-5 font-bold tracking-wider text-white rounded-lg bg-[#6631D4] hover:bg-[#411d8a] cursor-pointer" value="Suscribirse" />
                         <p className="text-[#6631D4] text-sm mt-2">Serás de los primeros</p>
 
