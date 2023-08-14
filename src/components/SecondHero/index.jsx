@@ -19,4 +19,4 @@ const SecondHero = () => {
     );
 }
 
-export { SecondHero };
+export { SecondHero }
