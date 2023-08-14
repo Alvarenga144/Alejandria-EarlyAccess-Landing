@@ -8,7 +8,7 @@ const FloatMessages = () => {
     return (
         <div id="efective-sms-section" className="w-full py-4 px-4 justify-center">
 
-            <div class="max-w-[900px] mx-auto my-10
+            <div class="max-w-[900px] mx-auto
                         md:grid md:grid-rows-1 md:grid-flow-col md:gap-4 
                         sm:grid sm:grid-rows-1 sm:grid-flow-col sm:gap-4
                         flex flex-col gap-4">

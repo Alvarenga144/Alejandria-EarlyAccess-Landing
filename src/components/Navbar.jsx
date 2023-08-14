@@ -29,12 +29,12 @@ const Navbar = () => {
                 <div onClick={handleNav} className='block md:hidden'>
                     {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                 </div>
-                <div className={!nav ? 'fixed left-0 top-0 w-[84%] h-screen border-r border-r-[#ADADAD] bg-[#FFFFFF] ease-in-out duration-500 z-50' : 'fixed left-[-100%]'}>
-                <div className="flex items-center ml-4 mt-2">
-                    <img className="w-[34px] h-[22px] mr-1" src={MainLogo} alt="/" />
-                    <h1 className="text-lg font-bold tracking-wide text-[#000000]">Alejandr<span className="text-transparent bg-clip-text bg-gradient-to-t from-[#110036] to-[#7B3DFF]">ía</span></h1>
-                </div>
-                <ul className="uppercase p-4 text-sm font-semibold">
+                <div className={!nav ? 'fixed left-0 top-0 w-[84%] h-screen border-r border-r-[#ADADAD] bg-[#FFFFFF] ease-in-out duration-500 z-40' : 'fixed left-[-100%]'}>
+                    <div className="flex items-center ml-4 mt-2">
+                        <img className="w-[34px] h-[22px] mr-1" src={MainLogo} alt="/" />
+                        <h1 className="text-lg font-bold tracking-wide text-[#000000]">Alejandr<span className="text-transparent bg-clip-text bg-gradient-to-t from-[#110036] to-[#7B3DFF]">ía</span></h1>
+                    </div>
+                    <ul className="uppercase p-4 text-sm font-semibold">
                         <li onClick={handleNav} className="p-4 border-b border-b-[#ADADAD] hover:text-[#411d8a] cursor-pointer transition-[0.5]"><a href="#conversation-section">Conversación</a></li>
                         <li onClick={handleNav} className="p-4 border-b border-b-[#ADADAD] hover:text-[#411d8a] cursor-pointer transition-[0.5]"><a href="#comunity-section">Comunidad</a></li>
                         <li onClick={handleNav} className="p-4 border-b border-b-[#ADADAD] hover:text-[#411d8a] cursor-pointer transition-[0.5]"><a href="#efective-sms-section">Efectividad</a></li>

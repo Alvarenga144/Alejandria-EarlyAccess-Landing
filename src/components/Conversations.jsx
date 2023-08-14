@@ -8,20 +8,23 @@ const Conversations = () => {
     return (
         <div id="conversation-section" className="w-full py-4 px-4 justify-center">
 
-            <div class="max-w-[900px] mx-auto
-                        md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 
+            <div class="md:max-w-[900px] md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 
                         sm:grid sm:grid-rows-2 sm:grid-flow-col sm:gap-4
-                        flex flex-col gap-4">
+                        flex flex-col gap-4 mx-auto">
 
-                <div class="md:row-span-1 md:col-span-2 md:h-[240px]
-                            sm:row-span-1 sm:col-span-1 sm:h-[310px] z-[-10]">
-                    <h2 className="md:text-2xl sm:text-xl
-                                   text-xl text-[#000000] font-bold drop-shadow-2xl">Conversa con el Pasado, Presente y Futuro</h2>
-                    <p className="md:text-xl sm:text-md
-                                  text-md text-[#616161] mt-4 drop-shadow-2xl ">Imagina conversar con una entidad que combina el conocimiento histórico, la información en tiempo real y el poder analítico para resolver problemas y generar contenido nuevo, todo basado en tus inquietudes.</p>
+                <div class="md:row-span-1 md:col-span-2 md:h-[240px] 
+                            sm:row-span-1 sm:col-span-1 sm:h-[310px]">
+                    <div className="z-[-10]">
+                        <h2 className="md:text-2xl sm:text-xl
+                                    text-xl text-[#000000] font-bold">Conversa con el Pasado, Presente y Futuro</h2>
+                    </div>
+                    <div className="z-[-10]">
+                        <p className="md:text-xl sm:text-md
+                                    text-md text-[#616161] mt-4">Imagina conversar con una entidad que combina el conocimiento histórico, la información en tiempo real y el poder analítico para resolver problemas y generar contenido nuevo, todo basado en tus inquietudes.</p>
+                    </div>
                     <div className="md:text-left md:pb-0
                                     sm:text-left sm:pb-0
-                                    mx-auto mt-8 pb-6 text-center z-50">
+                                    mx-auto mt-8 pb-6 text-center">
                         <AccesoAntibutton />
                     </div>
                 </div>

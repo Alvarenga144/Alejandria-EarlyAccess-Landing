@@ -3,8 +3,8 @@ import EventsNews from '../assets/images/events&News.png';
 
 const NewsInformation = () => {
     return (
-        <div id="news-information-section" className="w-full pb-12 pt-4 px-4 justify-center">
-            <h2 className="md:text-2xl sm:text-xl text-xl text-[#000000] text-center my-8 font-bold drop-shadow-2xl">¡Todo lo ocurrido en tu zona y en el mundo! 🗞</h2>
+        <div id="news-information-section" className="w-full py-6 px-4 justify-center">
+            <h2 className="md:text-2xl sm:text-xl text-xl text-[#000000] text-center mb-8 font-bold drop-shadow-2xl">¡Todo lo ocurrido en tu zona y en el mundo! 🗞</h2>
             <div class="max-w-[900px] mx-auto
                         md:grid md:grid-rows-1 md:grid-flow-col md:gap-4 
                         sm:grid sm:grid-rows-1 sm:grid-flow-col sm:gap-4
