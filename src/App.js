@@ -6,6 +6,7 @@ import { Facts } from './components/Facts';
 import { SecondHero } from './components/SecondHero/index';
 import { FloatMessages } from './components/FloatMessages';
 import { NewsInformation } from './components/NewsInformation';
+import { Form } from './components/Form';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SecondHero />
       <FloatMessages />
       <NewsInformation />
+      <Form />
     </div>
   );
 }
