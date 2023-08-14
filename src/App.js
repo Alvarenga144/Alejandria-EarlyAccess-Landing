@@ -4,6 +4,8 @@ import { Hero } from './components/Hero';
 import { Conversations } from './components/Conversations';
 import { Facts } from './components/Facts';
 import { SecondHero } from './components/SecondHero/index';
+import { FloatMessages } from './components/FloatMessages';
+import { NewsInformation } from './components/NewsInformation';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Conversations />
       <Facts />
       <SecondHero />
+      <FloatMessages />
+      <NewsInformation />
     </div>
   );
 }
