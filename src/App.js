@@ -7,6 +7,7 @@ import { SecondHero } from './components/SecondHero/index';
 import { FloatMessages } from './components/FloatMessages';
 import { NewsInformation } from './components/NewsInformation';
 import { Form } from './components/Form';
+import { Footer } from './components/footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <FloatMessages />
       <NewsInformation />
       <Form />
+      <Footer />
     </div>
   );
 }
