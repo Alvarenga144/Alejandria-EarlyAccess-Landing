@@ -3,14 +3,14 @@ import MainLogo from '../assets/images/mainlogo.png';
 
 const Form = () => {
     return (
-        <div className="w-full py-8 px-4 justify-center">
+        <div id="early-access-form" className="w-full py-8 px-4 justify-center">
             <div class="max-w-[900px] mx-auto rounded-2xl bg-gradient-to-tl from-[#110036] to-[#7B3DFF]
                         md:grid md:grid-rows-1 md:grid-flow-col md:gap-4 md:px-12 md:py-12
                         sm:grid sm:grid-rows-1 sm:grid-flow-col sm:gap-4 sm:px-8 sm:py-8
                         flex flex-col gap-4 px-4 py-8">
 
                 <div class="md:row-span-1 md:col-span-1 sm:row-span-1 sm:col-span-1">
-                    <h2 className="md:text-5xl sm:text-4xl text-3xl text-[#000000] font-bold">Sé parte de los pioneros que cambiarán la forma en que el mundo experimenta el internet.</h2>
+                    <h2 className="md:text-5xl sm:text-4xl text-3xl text-[#000000] font-bold">Sé parte de los pioneros que <span className="text-[#FFFFFF]">cambiarán</span> la forma en que el mundo experimenta el internet</h2>
                     <p className="md:text-xl sm:text-md text-md font-semibold mt-8 mb-8 text-[#FFFFFF] ">Empieza hoy mismo, ¡Es gratis! ✨</p>
                 </div>
 

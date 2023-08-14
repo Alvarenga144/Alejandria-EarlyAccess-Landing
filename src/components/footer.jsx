@@ -6,8 +6,8 @@ const Footer = () => {
         <div className="bg-[#1E1E1E]">
             <div class="flex flex-col items-center max-w-[1240px] mx-auto px-4 py-8">
                 <div className="flex items-center">
-                    <img className="w-[34px] h-[22px] mr-1" src={MainLogo} alt="/" />
-                    <h1 className="text-lg font-bold tracking-wide text-[#E1E1E1]">Alejandría</h1>
+                    <img className="w-[34px] h-[22px] mr-1 invert" src={MainLogo} alt="/" />
+                    <h1 className="text-lg font-bold tracking-wide text-[#E1E1E1] ">Alejandr<span href="#" className="text-[#7B3DFF] cursor-default">ía</span></h1>
                     
                 </div>
                 <p className="text-sm text-[#616161] font-semibold italic">© Copyright 2023.</p>

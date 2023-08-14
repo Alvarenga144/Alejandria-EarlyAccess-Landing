@@ -6,7 +6,7 @@ import LibrarySVG from '../assets/images/library-svgrepo-com.svg';
 
 const Facts = () => {
     return (
-        <div className="w-full text-[#000000] justify-center py-20">
+        <div id="comunity-section" className="w-full text-[#000000] justify-center py-20">
             <div className="max-w-[1100px] w-full mx-auto text-center flex flex-col">
 
                 <div class="md:max-w-[60%]

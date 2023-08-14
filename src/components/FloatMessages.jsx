@@ -6,7 +6,7 @@ import InfoGroup3 from '../assets/images/3 info group.png';
 
 const FloatMessages = () => {
     return (
-        <div className="w-full py-4 px-4 justify-center">
+        <div id="efective-sms-section" className="w-full py-4 px-4 justify-center">
 
             <div class="max-w-[900px] mx-auto my-10
                         md:grid md:grid-rows-1 md:grid-flow-col md:gap-4 
@@ -16,7 +16,7 @@ const FloatMessages = () => {
                 <div class="md:row-span-1 md:col-span-1 md:max-w-[96%]
                             sm:row-span-1 sm:col-span-1 sm:max-w-[92%]">
                     <h2 className="md:text-2xl md:mt-4 sm:text-xl sm:mt-4
-                                   text-xl text-[#000000] font-bold drop-shadow-2xl">Obtén la información especifica que necesitas, de la forma más fácil posible 🧑🏻‍💻</h2>
+                                   text-xl text-[#000000] font-bold drop-shadow-2xl">Obtén la <span className="text-[#7B3DFF]">información</span> especifica que necesitas, de la forma más <span className="text-[#7B3DFF]">fácil</span> posible 🧑🏻‍💻</h2>
                     <p className="md:text-xl sm:text-md
                                   text-md text-[#616161] mt-4 drop-shadow-2xl">La magia de Alejandría es que ni siquiera nosotros, los creadores, conocemos todas las posibilidades que puede ofrecer. Con tu participación, tú puedes ayudar a escribir este emocionante capítulo en la historia de la tecnología.</p>
                     <div className="md:text-left md:pb-0
