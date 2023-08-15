@@ -38,4 +38,4 @@ const FloatMessages = () => {
     );
 }
 
-export { FloatMessages };
+export { FloatMessages }

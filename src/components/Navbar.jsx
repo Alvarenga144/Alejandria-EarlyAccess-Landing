@@ -46,23 +46,4 @@ const Navbar = () => {
     );
 }
 
-export { Navbar };
-
-/*
-
-<div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
-    <h1 className="w-full text-3xl font-bold text-[#00df90]">REACT.</h1>
-    <ul className="flex ">
-        <li className="p-4"></li>
-        <li className="p-4"></li>
-        <li className="p-4"></li>
-    </ul>
-    <div class="flex items-center md:order-2">
-        <a href="#" type="button" class="block py-2 px-3 ml-2 text-white rounded-lg hover:bg-gray-100 bg-sky-500 hover:bg-sky-600 font-semibold" id="user-menu-button-singup">
-            Acceso anticipado
-        </a>
-    </div>
-</div>
-  
-
-*/
+export { Navbar }

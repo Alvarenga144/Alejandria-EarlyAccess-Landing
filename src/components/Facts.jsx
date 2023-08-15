@@ -55,4 +55,4 @@ const Facts = () => {
     );
 }
 
-export { Facts };
+export { Facts }

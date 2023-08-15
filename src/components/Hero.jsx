@@ -7,12 +7,12 @@ const Hero = () => {
     return (
         <div className="w-full text-[#000000] justify-center pb-20">
             <div className="max-w-[900px]  md:mt-[60px]  sm:mt-[50px] mt-[40px] w-full mx-auto text-center flex flex-col">
-                
+
                 <div className="flex max-w-[200px] bg-[#EEEEEE] rounded-lg p-1 mx-auto mb-8">
                     <p className="text-sm font-semibold text-[#6631D4] my-auto">Potenciado por ChatGPT</p>
                     <img src={ChatGPT} alt="/" className="w-[24px] my-auto ml-1 rounded-lg" />
                 </div>
-                
+
                 <div className="flex text-center justify-center z-[-10]">
                     <h1 className="font-black md:text-7xl sm:text-6xl text-5xl md:py-1 drop-shadow-2xl">PROYECTO <span className="text-transparent bg-clip-text bg-gradient-to-t from-[#110036] to-[#7B3DFF]">ALEJANDRÍA</span></h1>
                 </div>
@@ -34,4 +34,4 @@ const Hero = () => {
     );
 }
 
-export { Hero };
+export { Hero }

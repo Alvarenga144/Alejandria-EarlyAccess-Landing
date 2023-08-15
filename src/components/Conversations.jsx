@@ -46,33 +46,4 @@ const Conversations = () => {
     );
 }
 
-export { Conversations };
-
-/*
-
-md:text-4xl sm:text-3xl text-xl
-
-        <div className="w-full bg-slate-300 py-16 px-4 justify-center">
-            <div class="max-w-[900px] mx-auto md:grid md:grid-rows-2 md:grid-flow-col md:gap-4 sm:flex sm:flex-col sm:gap-2">
-                
-                <div class="md:row-span-1 md:col-span-2 mb-8">
-                    <h2 className="md:text-xl sm:text-md text-md text-[#000000] font-bold">Conversa con el Pasado, Presente y Futuro</h2>
-                    <p className="md:text-xl sm:text-md text-md text-[#616161] mt-4">Imagina conversar con una entidad que combina el conocimiento histórico, la información en tiempo real y el poder analítico para resolver problemas y generar contenido nuevo, todo basado en tus inquietudes.</p>
-                    <div className="mx-auto mt-8">
-                        <AccesoAntibutton />
-                    </div>
-                </div>
-                <div class="md:row-span-1 md:col-span-1">
-                    <img className="md:max-w-[291px] mx-auto sm:my-2" src={conver1} alt="/" />
-                </div>
-                <div class="md:row-span-1 md:col-span-1">
-                    <img className="md:max-w-[268px] mx-auto sm:my-2" src={conver2} alt="/" />
-                </div>
-                <div class="md:row-span-2 md:col-span-1">
-                    <img className="md:max-w-[268px] mx-auto sm:my-2" src={conver3} alt="/" />
-                </div>
-
-            </div>
-        </div>
-
-*/
+export { Conversations }

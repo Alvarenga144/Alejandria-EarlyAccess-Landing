@@ -16,7 +16,7 @@ const NewsInformation = () => {
                     <h2 className="md:text-lg sm:text-sm text-sm text-[#000000] font-bold">Entrena a la Inteligencia Artificial ✍🏻</h2>
                     <p className="md:text-md sm:text-sm
                                   text-md text-[#616161] mt-2 drop-shadow-2xl">¡No te quedes atrás! Crea tu perfil, entrena con tu información a la inteligencia artificial y genera un impacto en los demás.
-                                  Tus publicaciones, tus servicios, tus eventos, todo.</p>
+                        Tus publicaciones, tus servicios, tus eventos, todo.</p>
                     <h2 className="md:text-lg sm:text-sm text-sm text-[#000000] mt-4 font-bold">Conecta a Nivel Global 🌐</h2>
                     <p className="md:text-md sm:text-sm
                                   text-md text-[#616161] mt-2 drop-shadow-2xl">¡Nuevos Clientes! Deja que los demás te encuentren y vean qué estás publicando. Crea un perfil como Comercio, y sé descubierto por personas que buscan tus productos o servicios sin importar las fronteras del idioma.</p>
@@ -36,4 +36,4 @@ const NewsInformation = () => {
     );
 }
 
-export { NewsInformation };
+export { NewsInformation }

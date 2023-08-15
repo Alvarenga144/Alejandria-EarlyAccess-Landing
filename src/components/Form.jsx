@@ -1,10 +1,10 @@
 //import axios from "axios";
 import React from "react";
 import { useState } from "react";
+import { Toaster, toast } from 'sonner';
 import MainLogo from '../assets/images/mainlogo.png';
 
 const Form = () => {
-
     // Form states
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -29,7 +29,6 @@ const Form = () => {
         setComent(event.target.value);
     }
 
-
     // On submit event
     const handleSubmit = (event) => {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzo6dRcd9mSzu-vTiW0_rlxJn_KijtMv3hk6SebqjQ2nQA5hlDeQzByOMt9BILBpmI5/exec';
@@ -40,11 +39,35 @@ const Form = () => {
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
 
+        const promise = () => new Promise((response) => setTimeout(response, 2000));
+
+        toast.promise(promise, {
+            loading: 'Enviado...',
+            success: () => {
+                setName('');
+                setEmail('');
+                setProfile('selection');
+                setComent('');
+                return `toast has been added`;
+            },
+            error: 'Error',
+        });
+    }
+
+    /* const handleSubmit = (event) => {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzo6dRcd9mSzu-vTiW0_rlxJn_KijtMv3hk6SebqjQ2nQA5hlDeQzByOMt9BILBpmI5/exec';
+        const form = document.forms['my-google-sheet'];
+        event.preventDefault();
+        
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+        
         setName('');
         setEmail('');
         setProfile('selection');
         setComent('');
-    }
+    } */
 
     return (
         <div id="early-access-form" className="w-full py-8 px-4 justify-center">
@@ -81,7 +104,12 @@ const Form = () => {
 
                         <textarea onChange={comentFun} value={coment} name="Coment" id="txtComents" cols="30" rows="3" className="bg-[#EEEEEE] text-[#616161] rounded-lg w-full px-3 py-2 font-semibold mt-3" placeholder="Comentarios adicionales..."></textarea>
                         <input name="dateRegistered" value={dateRegistered} className="hidden" readOnly />
-                        <input type="submit" className="w-full min-h-[37px] py-2 px-3 mt-5 font-bold tracking-wider text-white rounded-lg bg-[#6631D4] hover:bg-[#411d8a] cursor-pointer" value="Suscribirse" />
+
+                        <div>
+                            <Toaster position="top-right" expand={false} />
+                            <input type="submit" className="w-full min-h-[37px] py-2 px-3 mt-5 font-bold tracking-wider text-white rounded-lg bg-[#6631D4] hover:bg-[#411d8a] cursor-pointer" value="Suscribirse" />
+                        </div>
+
                         <p className="text-[#6631D4] text-sm mt-2">Serás de los primeros</p>
 
                     </form>
