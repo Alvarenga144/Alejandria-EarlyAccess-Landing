@@ -1,10 +1,17 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { AccesoAntibutton } from "./AccesoAntiButton";
 import conver1 from '../assets/images/conver1.png';
 import conver2 from '../assets/images/conver2.png';
 import conver3 from '../assets/images/conver3.png';
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const Conversations = () => {
+    
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div id="conversation-section" className="w-full py-4 px-4 justify-center">
 
@@ -13,10 +20,10 @@ const Conversations = () => {
                         flex flex-col gap-4 mx-auto">
 
                 <div class="md:row-span-1 md:col-span-2 md:h-[240px] 
-                            sm:row-span-1 sm:col-span-1 sm:h-[310px]">
+                            sm:row-span-1 sm:col-span-1 sm:h-[310px]" data-aos="fade-up">
                     <div className="z-[-10]">
                         <h2 className="md:text-2xl sm:text-xl
-                                    text-xl text-[#000000] font-bold">Conversa con el Pasado, Presente y Futuro</h2>
+                                    text-xl text-[#1a1e22] font-bold">Conversa con el Pasado, Presente y Futuro</h2>
                     </div>
                     <div className="z-[-10]">
                         <p className="md:text-xl sm:text-md
@@ -29,16 +36,16 @@ const Conversations = () => {
                     </div>
                 </div>
                 <div class="md:row-span-1 md:col-span-1 md:mt-[-36px]
-                            sm:row-span-1 sm:col-span-1 sm:mt-[-100px]">
-                    <img className="md:max-w-[291px] md:ml-0 mx-auto px-4" src={conver1} alt="/" />
+                            sm:row-span-1 sm:col-span-1 sm:mt-[-100px]" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="500">
+                    <img className="md:max-w-[291px] md:ml-0 mx-auto px-4 drop-shadow-xl" src={conver1} alt="/" />
                 </div>
                 <div class="md:row-span-1 md:col-span-1 md:mt-[-36px]
-                            sm:row-span-1 sm:col-span-1 sm:h-[310px]">
-                    <img className="md:max-w-[268px] md:ml-0 mx-auto px-4" src={conver2} alt="/" />
+                            sm:row-span-1 sm:col-span-1 sm:h-[310px]" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="500">
+                    <img className="md:max-w-[268px] md:ml-0 mx-auto px-4 drop-shadow-xl" src={conver2} alt="/" />
                 </div>
                 <div class="md:row-span-2 md:col-span-1 md:mt-0
-                            sm:row-span-1 sm:col-span-1 sm:mt-[-100px]">
-                    <img className="md:max-w-[302px] mx-auto px-4" src={conver3} alt="/" />
+                            sm:row-span-1 sm:col-span-1 sm:mt-[-100px]" data-aos="fade-left" data-aos-easing="ease" data-aos-delay="500">
+                    <img className="md:max-w-[302px] mx-auto px-4 drop-shadow-xl" src={conver3} alt="/" />
                 </div>
             </div>
 

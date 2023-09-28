@@ -7,6 +7,7 @@ import { SecondHero } from './components/SecondHero/index';
 import { FloatMessages } from './components/FloatMessages';
 import { NewsInformation } from './components/NewsInformation';
 import { Form } from './components/Form';
+import { ToTopButton } from "./components/ToTopButton";
 import { Footer } from './components/footer';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <FloatMessages />
       <NewsInformation />
       <Form />
+      <ToTopButton />
       <Footer />
     </div>
   );
