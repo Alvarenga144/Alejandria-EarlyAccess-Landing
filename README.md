@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Alejandría Landing Page 🌐
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido al repositorio de la **Landing Page** para la nueva **App Social**! Esta aplicación ofrecerá una experiencia única al combinar características de posteo al estilo **Twitter** con un **Marketplace** integrado y un avanzado sistema de **búsqueda con Inteligencia Artificial** (IA), respaldado por GPT.
 
-## Available Scripts
+La landing page permite a los usuarios suscribirse al **acceso anticipado** o a la **lista de espera**, brindándoles la oportunidad de ser los primeros en probar esta nueva plataforma.
 
-In the project directory, you can run:
+<img alt="landing-preview" src="./src/assets/images/Captura de pantalla 2024-09-29 011555.png">
 
-### `npm start`
+## Funcionalidades Principales ✨
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Postea como en Twitter**: Expresa tus ideas y comparte actualizaciones de manera rápida y sencilla.
+- **Marketplace Integrado**: Compra y vende productos dentro de la misma plataforma.
+- **Buscador con Inteligencia Artificial**: Descubre contenido de forma inteligente gracias a GPT que alimenta nuestro sistema de búsqueda avanzada.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías Utilizadas 🛠️
 
-### `npm test`
+- **React.js**: Framework principal para la construcción de interfaces de usuario.
+- **Tailwind CSS**: Estilos rápidos y eficientes para un diseño moderno y responsivo.
+- **Google Sheets API**: Los registros de suscripción se almacenan directamente en una hoja de Google Sheets, utilizada como base de datos temporal para la lista de espera.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Landing page en tiempo real
 
-### `npm run build`
+**➡️ Puedes ver la landing page en vivo [aquí](https://).**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## English Version 🌍
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Welcome to the **Landing Page** repository for the new **Social App**! This app will offer a unique experience by combining **Twitter-like posting** features with an integrated **Marketplace** and an advanced **AI-powered search system**, utilizing GPT technology.
 
-### `npm run eject`
+The landing page allows users to subscribe for **early access** or join the **waitlist**, giving them the opportunity to be among the first to try this exciting platform.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Key Features ✨
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Post like Twitter**: Share updates and ideas quickly and easily.
+- **Integrated Marketplace**: Buy and sell products seamlessly within the platform.
+- **AI-powered Search**: Discover content intelligently, powered by GPT.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used 🛠️
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React.js**: Main framework for building the user interface.
+- **Tailwind CSS**: Fast and efficient styling for a modern, responsive design.
+- **Google Sheets API**: Subscription records are stored in a Google Sheet, used as a temporary database for the waitlist.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por tu interés en nuestra aplicación social! No dudes en explorar el código, personalizarlo, y probar las funcionalidades. ¡Esperamos verte pronto en nuestra plataforma!
