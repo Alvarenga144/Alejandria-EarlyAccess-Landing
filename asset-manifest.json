@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Alejandria-EarlyAccess-Landing/static/css/main.a8f7cc19.css",
+    "main.js": "/Alejandria-EarlyAccess-Landing/static/js/main.49e6acea.js",
+    "static/media/events&News.png": "/Alejandria-EarlyAccess-Landing/static/media/events&News.e8e2005d6e36e919635c.png",
+    "static/media/conver3.png": "/Alejandria-EarlyAccess-Landing/static/media/conver3.66ef4085312289283a32.png",
+    "static/media/partphone.png": "/Alejandria-EarlyAccess-Landing/static/media/partphone.4a150bd24c444bb4a357.png",
+    "static/media/conver2.png": "/Alejandria-EarlyAccess-Landing/static/media/conver2.a3ae1fc9e935d008eec5.png",
+    "static/media/conver1.png": "/Alejandria-EarlyAccess-Landing/static/media/conver1.dc3c340317b9fb7c2f8d.png",
+    "static/media/1 info group.png": "/Alejandria-EarlyAccess-Landing/static/media/1 info group.e46997ae67806c68276a.png",
+    "static/media/3 info group.png": "/Alejandria-EarlyAccess-Landing/static/media/3 info group.5833284bc9345605a3ab.png",
+    "static/media/2 info group.png": "/Alejandria-EarlyAccess-Landing/static/media/2 info group.5bcbfbfce031e92c792e.png",
+    "static/media/globe-svgrepo-com.svg": "/Alejandria-EarlyAccess-Landing/static/media/globe-svgrepo-com.c8602b0b4bfad8e95fa8387b9274fe7b.svg",
+    "static/media/idea-svgrepo-com.svg": "/Alejandria-EarlyAccess-Landing/static/media/idea-svgrepo-com.a16dab50918d73158ac19ba32ac2cd81.svg",
+    "static/media/multiple-devices-svgrepo-com.svg": "/Alejandria-EarlyAccess-Landing/static/media/multiple-devices-svgrepo-com.df29fcbc3db3538a5c576b98208d23de.svg",
+    "static/media/library-svgrepo-com.svg": "/Alejandria-EarlyAccess-Landing/static/media/library-svgrepo-com.95129cea5f464430b34db3bf8560046a.svg",
+    "index.html": "/Alejandria-EarlyAccess-Landing/index.html",
+    "main.a8f7cc19.css.map": "/Alejandria-EarlyAccess-Landing/static/css/main.a8f7cc19.css.map",
+    "main.49e6acea.js.map": "/Alejandria-EarlyAccess-Landing/static/js/main.49e6acea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8f7cc19.css",
+    "static/js/main.49e6acea.js"
+  ]
+}
