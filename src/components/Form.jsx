@@ -38,7 +38,38 @@ const Form = () => {
 
     // On submit event
     const handleSubmit = (event) => {
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzo6dRcd9mSzu-vTiW0_rlxJn_KijtMv3hk6SebqjQ2nQA5hlDeQzByOMt9BILBpmI5/exec';
+        event.preventDefault();
+    
+        // Simulamos una promesa que siempre se resuelve después de 2 segundos
+        const promise = () => new Promise((resolve) => setTimeout(resolve, 2000));
+    
+        // Usamos la función de promesa en el toast
+        toast.promise(promise, {
+            loading: 'Enviando...',
+            success: () => {
+                // Limpiamos los campos del formulario
+                setName('');
+                setEmail('');
+                setProfile('selection');
+                setComent('');
+    
+                // Mostramos un mensaje adicional tras un pequeño retraso
+                setTimeout(() => {
+                    toast.message('¡Bienvenido! 🥳❤️', {
+                        description: 'Te enviaremos un correo cuando la App esté lista 🔔',
+                    });
+                }, 3500);
+    
+                return 'Suscrito correctamente 🫡';
+            },
+            error: '¡Whoops! Parece que algo salió mal 🫤',
+        });
+    };
+    
+
+    /**
+    const handleSubmit = (event) => {
+        const scriptURL = '';
         const form = document.forms['my-google-sheet'];
         event.preventDefault();
 
@@ -65,21 +96,7 @@ const Form = () => {
             error: '¡Whoops! Parece que algo salió mal🫤',
         });        
     }
-
-    /* const handleSubmit = (event) => {
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzo6dRcd9mSzu-vTiW0_rlxJn_KijtMv3hk6SebqjQ2nQA5hlDeQzByOMt9BILBpmI5/exec';
-        const form = document.forms['my-google-sheet'];
-        event.preventDefault();
-        
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-        
-        setName('');
-        setEmail('');
-        setProfile('selection');
-        setComent('');
-    } */
+    */
 
     return (
         <div id="early-access-form" className="w-full py-8 px-4 justify-center">

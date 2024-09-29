@@ -26,28 +26,28 @@ const Footer = () => {
                 <div className="sm:justify-start sm:items-start sm:border-0 flex flex-col items-center justify-center border-b border-b-[#616161] py-4">
                     <h2 className="text-sm text-[#E1E1E1] font-bold tracking-wider uppercase">CONTACTO</h2>
                     
-                    <a href="https://www.instagram.com/alejandria_ai/" target={"_blank"} rel="noreferrer" className="flex items-center mt-4">
+                    <a href="/" target={"_blank"} rel="noreferrer" className="flex items-center mt-4">
                         <BiLogoInstagram size={22} color="#616161" />
-                        <p className="ml-2 text-sm text-[#aaaaaa] font-semibold">@alejandria_ai</p>
+                        <p className="ml-2 text-sm text-[#aaaaaa] font-semibold">@Instagram</p>
                     </a>
-                    <a href="https://twitter.com/Alejandra122345" target={"_blank"} rel="noreferrer" className="flex items-center mt-2">
+                    <a href="/" target={"_blank"} rel="noreferrer" className="flex items-center mt-2">
                         <h2 className="w-[22px] font-bold text-[#616161] ml-1.5">X</h2>
-                        <p className="text-sm text-[#aaaaaa] font-semibold">@Alejandra122345</p>
+                        <p className="text-sm text-[#aaaaaa] font-semibold">@X</p>
                     </a>
-                    <a href="https://www.facebook.com/alejandriaai" target={"_blank"} rel="noreferrer" className="flex items-center mt-2">
+                    <a href="/" target={"_blank"} rel="noreferrer" className="flex items-center mt-2">
                         <BiLogoFacebookCircle size={22} color="#616161" />
-                        <p className="ml-2 text-sm text-[#aaaaaa] font-semibold">Proyecto Alejandría</p>
+                        <p className="ml-2 text-sm text-[#aaaaaa] font-semibold">Facebook</p>
                     </a>
                     <div className="flex items-center mt-2">
                         <BiLogoGmail size={22} color="#616161" />
-                        <p className="ml-2 text-sm text-[#aaaaaa] font-semibold">info@alexandreya.com</p>
+                        <p className="ml-2 text-sm text-[#aaaaaa] font-semibold">Mail</p>
                     </div>
                 </div>
 
                 <div className="sm:justify-start sm:items-start flex flex-col items-center justify-center pt-4">
                     <p className="text-sm text-[#616161] font-semibold italic">© Copyright 2023</p>
                     <p className="text-sm text-[#616161] font-semibold italic">All rights reserved</p>
-                    <p className="text-sm text-[#616161] font-semibold italic">Powered by Alejandría Team</p>
+                    <p className="text-sm text-[#616161] font-semibold italic">Powered by Esteban Alvarenga</p>
                 </div>
 
             </div>
